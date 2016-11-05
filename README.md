@@ -13,3 +13,12 @@ yarn
 npm start
 open http://localhost:3000
 ```
+### Code style
+
+JS Standard
+
+### Technology stack
+
+* MobX
+* React
+* Yarn
