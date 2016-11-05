@@ -22,3 +22,4 @@ JS Standard
 * MobX
 * React
 * [Yarn](https://code.facebook.com/posts/1840075619545360)
+* Webpack
