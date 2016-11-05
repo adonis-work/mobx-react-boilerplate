@@ -15,7 +15,7 @@ open http://localhost:3000
 ```
 ### Code style
 
-JS Standard
+* [JavaScript Standard](http://standardjs.com/)
 
 ### Technology stack
 
