@@ -21,4 +21,4 @@ JS Standard
 
 * MobX
 * React
-* Yarn
+* [Yarn](https://code.facebook.com/posts/1840075619545360)
