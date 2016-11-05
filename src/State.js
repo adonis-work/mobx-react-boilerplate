@@ -7,14 +7,25 @@ function State () {
       current: Date.now(),
 
       get elapsedTime () {
-        return ((this.current - this.start) / 1000 | 0)
+        return this.current - this.start
+      },
+
+      get elapsedSeconds () {
+        return this.elapsedTime / 1000 | 0
       },
 
       tick: action('tick', () => {
         this.current = Date.now()
+      }),
+
+      reset: action('reset', () => {
+        this.start = Date.now()
       })
     }
   )
 }
 
-export default State
+const state = new State()
+setInterval(state.tick, 1000)
+
+export default state

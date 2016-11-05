@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { observer } from 'mobx-react'
-import DevTools from 'mobx-react-devtools'
+import s from './State'
+// import DevTools from 'mobx-react-devtools'
+//    <DevTools />
 
-const App = ({state:{tick, elapsedTime}}) => (
+const App = () => (
   <div>
-    <button onClick={tick}>
-      Seconds passed: {elapsedTime}
+    <button onClick={s.reset}>
+      Seconds passed: {s.elapsedSeconds}
     </button>
-    <DevTools />
   </div>
 )
 

@@ -1,15 +1,12 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
-import State from './State'
+import state from './State'
 import App from './App'
-
-const state = new State()
-setInterval(state.tick, 1000)
 
 render(
   <AppContainer>
-    <App state={state} />
+    <App />
   </AppContainer>,
   document.getElementById('root')
 )
@@ -20,7 +17,7 @@ if (module.hot) {
 
     render(
       <AppContainer>
-        <NextApp state={state} />
+        <NextApp />
       </AppContainer>,
       document.getElementById('root')
     )
